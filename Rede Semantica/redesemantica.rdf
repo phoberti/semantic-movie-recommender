@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="http://example.org/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/Deadpool&amp;Wolverine">
+    <rdf:type rdf:resource="http://example.org/Filme"/>
+    <ns1:pertenceAoGenero rdf:resource="http://example.org/Ação"/>
+    <ns1:pertenceAoGenero rdf:resource="http://example.org/Comédia"/>
+    <ns1:pertenceAoGenero rdf:resource="http://example.org/Ficçãocientífica"/>
+    <ns1:temAtor rdf:resource="http://example.org/RyanReynolds"/>
+    <ns1:dirigidoPor rdf:resource="http://example.org/ShawnLevy"/>
+    <ns1:produzidoPeloEstudio rdf:resource="http://example.org/MarvelStudios"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ShawnLevy">
+    <rdf:type rdf:resource="http://example.org/Diretor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/DivertidaMente2">
+    <rdf:type rdf:resource="http://example.org/Filme"/>
+    <ns1:pertenceAoGenero rdf:resource="http://example.org/Animação"/>
+    <ns1:pertenceAoGenero rdf:resource="http://example.org/Família"/>
+    <ns1:pertenceAoGenero rdf:resource="http://example.org/Aventura"/>
+    <ns1:pertenceAoGenero rdf:resource="http://example.org/Comédia"/>
+    <ns1:temAtor rdf:resource="http://example.org/AmyPoehler"/>
+    <ns1:dirigidoPor rdf:resource="http://example.org/KelseyMann"/>
+    <ns1:produzidoPeloEstudio rdf:resource="http://example.org/WaltDisneyPictures"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Ação">
+    <rdf:type rdf:resource="http://example.org/Genero"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Família">
+    <rdf:type rdf:resource="http://example.org/Genero"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/dirigidoPor">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/Filme"/>
+    <rdfs:range rdf:resource="http://example.org/Diretor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/pertenceAoGenero">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/Filme"/>
+    <rdfs:range rdf:resource="http://example.org/Genero"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/temAtor">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/Filme"/>
+    <rdfs:range rdf:resource="http://example.org/Ator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Diretor">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Estúdio">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/WaltDisneyPictures">
+    <rdf:type rdf:resource="http://example.org/Estúdio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Comédia">
+    <rdf:type rdf:resource="http://example.org/Genero"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/atuouEm">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/Ator"/>
+    <rdfs:range rdf:resource="http://example.org/Filme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/produzidoPeloEstudio">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/Filme"/>
+    <rdfs:range rdf:resource="http://example.org/Estúdio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/AmyPoehler">
+    <rdf:type rdf:resource="http://example.org/Ator"/>
+    <ns1:atuouEm rdf:resource="http://example.org/DivertidaMente2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/MarvelStudios">
+    <rdf:type rdf:resource="http://example.org/Estúdio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Filme">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/RyanReynolds">
+    <rdf:type rdf:resource="http://example.org/Ator"/>
+    <ns1:atuouEm rdf:resource="http://example.org/Deadpool&amp;Wolverine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Ator">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Ficçãocientífica">
+    <rdf:type rdf:resource="http://example.org/Genero"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Genero">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Aventura">
+    <rdf:type rdf:resource="http://example.org/Genero"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Animação">
+    <rdf:type rdf:resource="http://example.org/Genero"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/KelseyMann">
+    <rdf:type rdf:resource="http://example.org/Diretor"/>
+  </rdf:Description>
+</rdf:RDF>
