@@ -2,7 +2,7 @@
 
 Este projeto implementa uma base de conhecimento para recomendação de filmes utilizando Redes Semânticas e RDF (Resource Description Framework).
 
-Desenvolvido como parte da disciplina de Representação do Conhecimento no curso de Ciência da Computação da Universidade Estadual do Oeste do Paraná (UNIOESTE).
+Desenvolvido como parte da disciplina de Inteligência Artificial no curso de Ciência da Computação da Universidade Estadual do Oeste do Paraná (UNIOESTE).
 
 ---
 
